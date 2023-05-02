@@ -1,0 +1,116 @@
+.title-sec-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 4rem;
+}
+.sec-home {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 10rem 2rem 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-home img {
+  padding-right: 1.5rem;
+  width: 20rem;
+}
+
+button {
+  color: white;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+
+  background-color: #0075ff;
+  opacity: 1;
+   filter: alpha(opacity=50);
+   zoom: 1;
+   padding: 0.25rem 1rem;
+   border: 1px solid;
+   border-radius: 20px;
+  
+}
+
+
+button:hover {
+  opacity: 0.5;
+   filter: alpha(opacity=100);
+   zoom: 1;
+}
+.sec-home .home-cta {
+  flex: 1;
+  max-width: 992px;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075ff;
+}
+.cta-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+.sec-home .home-cta .home-title {
+  width: 30rem;
+  font-size: 5rem;
+}
+.sec-home .home-cta .home-description { 
+  font-size: 15px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
+
+.lead-magnet {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-control {
+  border: 1px solid rgb(179, 175, 175);
+  
+  color: black;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+	outline: none;
+  background-color: #0077ff00;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;  
+
+}
+
+@media (max-width: 584px) {
+  .sec-home {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+
+  }
+  .sec-home .home-cta .home-title {
+    font-size: 3em;
+    width: 20rem;
+  }
+
+  .form-control {
+    padding-right: 0;
+  }
+  
+}
+
+
+@media (max-width: 460px) {
+  .lead-magnet{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    
+  }
+}

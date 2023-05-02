@@ -1,0 +1,49 @@
+
+.sec-footer-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #f4f8fe;
+  padding: 0 5rem 5rem 5rem;
+  background-image: url(../../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 0.7rem;
+}
+
+ .btn-footer {
+	color: white;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+
+  background-color: #0075ff;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  border: solid 1px #0075ff;
+}
+
+
+@media (max-width: 797px) {
+  .sec-footer-cta {
+    background-image: none;
+    padding-top: 3rem;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+}

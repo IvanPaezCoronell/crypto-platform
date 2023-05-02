@@ -1,0 +1,60 @@
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+}
+
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.benefit-cards {
+  display: flex;
+}
+.benefit i {
+  color: #0075ff;
+  font-size: 7.5rem;
+  text-align: center;
+}
+.benefit .description .title {
+  font-size: 1rem;
+}
+.benefit .description .text {
+  color: #888;
+  font-weight: 600;
+}
+.benefit .cta {
+  color: #0075ff;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.icon-desc .icon {
+  padding: 0;
+  color: #0075ff;
+  font-size: 7rem;
+}
+.icon-desc .title {
+  margin-top: -1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sec-benefits .benefit-cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.icon-benefit {
+    color: #0075ff;
+    font-size: 7.5rem;
+    text-align: center;
+}

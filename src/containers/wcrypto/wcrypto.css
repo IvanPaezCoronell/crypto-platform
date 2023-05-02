@@ -1,0 +1,23 @@
+.sec-what-crypto {
+  padding: 10rem;
+}
+.sec-what-crypto h2 {
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+}
+.sec-what-crypto p {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+@media (max-width: 768px) {
+  .sec-what-crypto {
+    padding: 2rem;
+  }
+  .sec-what-crypto p  {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    
+  }
+}
