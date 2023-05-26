@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import NotFoundPage from '../pages/404/NotFoundPage'
-import PricesPage from '../pages/marketplace/PricesPage'
+import MarketplacePage from '../pages/marketplace/MarketplacePage'
 import App from '../App'
 
 
@@ -12,7 +12,7 @@ const RoutesApp = () => {
       <Router>
       <Routes>
         <Route exact path='/' Component={App} />
-        <Route path='/marketplace' Component={PricesPage} />
+        <Route path='/marketplace' Component={MarketplacePage} />
 
 
 

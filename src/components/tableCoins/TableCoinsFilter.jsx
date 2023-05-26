@@ -2,7 +2,13 @@ import CoinRow from './CoinRow';
 
 const titles = ['#', 'Coin', 'Price', 'Price Change'];
 
-const TableCoins = ({ coins }) => {
+const TableCoinsFilter = ({ coins, search }) => {
+	const filterCoins = coins.filter(
+		coin =>
+			coin.name.toLowerCase().includes(search.toLowerCase()) |
+			coin.symbol.toLowerCase().includes(search.toLowerCase()),
+	);
+
 	return (
 		<div>
 			<table className="table  mt-4 table-hover">
@@ -16,7 +22,7 @@ const TableCoins = ({ coins }) => {
 					</tr>
 				</thead>
 				<tbody>
-					{coins.map((coin, index) =>
+					{filterCoins.map((coin, index) =>
 						<CoinRow key={index} coin={coin} index={index + 1} />,
 					)}
 				</tbody>
@@ -24,4 +30,4 @@ const TableCoins = ({ coins }) => {
 		</div>
 	);
 };
-export default TableCoins;
+export default TableCoinsFilter;

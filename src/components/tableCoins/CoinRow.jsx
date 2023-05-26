@@ -5,24 +5,26 @@ const CoinRow = ({ coin, index }) => {
 			<td>
 				{index}
 			</td>
-			<td>
-        <img src={coin.image} alt={coin.name} style={{width: '3%'}} className="img-fluid me-4 image d-none d-md-block" />
-        <span>
-        {coin.name}
+			<td className="flex">
+				<img
+					src={coin.image}
+					alt={coin.name}
+					style={{ width: '3%' }}
+					className="img-fluid me-4 image"
+				/>
+				<span>
+					{coin.name}
+				</span>
 
-        </span>
-
-        <span className="ms-3 text-muted text-uppercase">{coin.symbol}</span>
-				
+				<span className="ms-3 text-muted text-uppercase">
+					{coin.symbol}
+				</span>
 			</td>
-      <td>
+			<td>
 				{coin.current_price}
 			</td>
-      <td>
+			<td className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}>
 				{coin.price_change_percentage_24h}
-			</td>
-      <td>
-				{coin.total_volume}
 			</td>
 		</tr>
 	);

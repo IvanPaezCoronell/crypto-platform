@@ -4,9 +4,11 @@ import Typed from 'typed.js';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import wallet from '../../assets/wallet.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
 	const textAnimation = useRef(null);
+  const navigate = useNavigate();
 
 	useEffect(() => {
 		const typed = new Typed(textAnimation.current, {
@@ -54,7 +56,7 @@ const Header = () => {
 						</div>
 
 						<div className="col">
-							<button className="btn-main">Get Started</button>
+							<button onClick={() => navigate('/marketplace')} className="btn-main">Get Started</button>
 						</div>
 					</div>
 				</div>
